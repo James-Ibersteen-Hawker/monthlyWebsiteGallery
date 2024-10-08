@@ -95,3 +95,19 @@ main {
 .navbar-nav li {
     color: white !important;
 }
+
+footer {
+    color: white !important;
+}
+
+.card {
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 3px 5px black !important;
+    transition: 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0px 10px 3px rgb(39, 39, 39) !important;
+    transform: translateY(-10px);
+    transition: 0.2s;
+}
