@@ -1,6 +1,7 @@
 window.addEventListener("scroll", myScroll);
 window.onload = function startUp() {
   myScroll();
+  link();
 };
 
 function myScroll() {
@@ -25,4 +26,14 @@ function counter(body) {
     "style",
     `background: rgb(80,${255 - Math.floor(scrollY / 10) - 100},10);`
   );
+}
+
+//a future library function?
+
+function link() {
+  let linkA = document.getElementsByClassName("linkA");
+  let linkB = document.getElementsByClassName("linkB");
+  for (let i = 0; i < linkA.length; i++) {
+    linkB[i].innerHTML = linkA[i].innerHTML;
+  }
 }
